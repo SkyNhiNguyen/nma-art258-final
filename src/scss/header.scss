@@ -1,0 +1,167 @@
+header {
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  flex-flow: row nowrap;
+  padding: 1.5rem $gutter 0;
+  // border-bottom: 0.5px solid $brown;
+  background: rgba(255, 255, 255, 1);
+}
+
+.logo {
+  width: 25%;
+
+  img {
+    width: 8rem;
+  }
+}
+
+.mainnav ul {
+  display: none;
+  margin: 6rem 0 4rem;
+  width: 100%;
+  text-align: center;
+
+  li {
+    padding: 1.5rem 0;
+  }
+
+  img {
+    width: 1rem;
+    opacity: 0;
+  }
+
+  a {
+    padding: 0.25rem 0.5rem;
+    font-family: $hand-font;
+    font-size: 1.75rem;
+    font-weight: lighter;
+    color: $brown;
+  }
+
+  li:hover,
+  li.active {
+    img {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+  }
+}
+
+/* --------------NAV TOGGLE------------------ */
+
+.toggle-nav {
+  display: block;
+  margin-top: 0.75rem;
+  height: 16px;
+  width: 2rem;
+  position: absolute;
+  right: $gutter;
+}
+
+.toggle-nav:hover {
+  background: transparent;
+}
+
+.toggle-nav::before,
+.toggle-nav::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.toggle-nav::before {
+  border-top: 2px solid $brown;
+  border-bottom: 2px solid $brown;
+}
+
+.toggle-nav::after {
+  top: 12px;
+  height: 2px;
+  background: $brown;
+}
+
+.toggle-nav.active::before {
+  border: 0;
+  top: 12px;
+  height: 2px;
+  background: $brown;
+  transform: rotate(45deg);
+}
+
+.toggle-nav.active::after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: $max-1-width) {
+  header {
+    .logo {
+      width: 33%;
+    }
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  header {
+    position: static;
+    padding: 0 $gutter-big;
+
+    .toggle-nav {
+      display: none;
+    }
+
+    .logo {
+      width: 60%;
+      margin-top: 0.75rem;
+    }
+
+    .mainnav {
+      display: flex;
+      width: 80%;
+      justify-content: center;
+
+      ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0;
+        margin-bottom: 0.25rem;
+
+        li {
+          padding: 0;
+        }
+
+        a {
+          font-size: 1.35rem;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $max-3-width) {
+  header {
+    .mainnav {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (min-width: $max-4-width) {
+  header {
+    .mainnav {
+      width: 22rem;
+    }
+
+    img {
+      width: 10rem;
+    }
+  }
+}

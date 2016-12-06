@@ -1,0 +1,97 @@
+.hero {
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+
+  &-img {
+    padding-top: 2rem;
+    width: 70%;
+    margin: auto;
+  }
+
+  &-header {
+    font-family: $hand-font;
+    font-size: 4rem;
+    text-align: center;
+    color: $black;
+  }
+
+  &-circle1 {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 8rem;
+    border: 2px solid $black;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 50%;
+    animation: pulse 5s infinite ease-in-out alternate;
+  }
+
+  &-circle2 {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 8rem;
+    border: 2px solid $black;
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    right: 20%;
+    animation: pulse 10s infinite ease-in-out alternate;
+  }
+
+  @keyframes pulse {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .hero {
+    &-header {
+      font-size: 5rem;
+    }
+
+    &-img {
+      width: 60%;
+    }
+
+    &-circle1 {
+      right: 65%;
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-3-width) {
+  .hero {
+    &-img {
+      width: 55%;
+    }
+
+    &-circle1 {
+      right: 50%;
+      width: 15rem;
+      height: 15rem;
+    }
+
+    &-circle2 {
+      width: 10rem;
+      height: 10rem;
+      top: 20%;
+      right: 30%;
+    }
+  }
+}
+
+@media screen and (min-width: $max-4-width) {
+  .hero {
+    &-img {
+      width: 50%;
+    }
+  }
+}

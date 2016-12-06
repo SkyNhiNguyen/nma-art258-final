@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// COLOR
+$brown: #666161;
+$black: #383a3f;
+
+// GRID:
+$gutter: 1.5rem;
+$gutter-big: 10%;
+$gutter-med: 3%;
+$gutter-xl: 15%;
+
+// FONT:
+$main-font: 'Libre Baskerville', sans-serif;
+$hand-font: 'Sacramento', cursive;
+
+/* Media Queries */
+$max-1-width: 500px;
+$max-2-width: 700px;
+$max-3-width: 1000px;
+$max-4-width: 1200px;
+
+// LINKs:
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// VIDEO
+video {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+// HEADING

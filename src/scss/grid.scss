@@ -1,0 +1,27 @@
+section {
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: $max-1-width) {
+  section {
+    padding: 0 $gutter 3rem;
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  section {
+    padding: 0 $gutter-med 3rem;
+  }
+}
+
+@media screen and (min-width: $max-3-width) {
+  section {
+    padding: 0 $gutter-big 4rem;
+  }
+}
+
+@media screen and (min-width: $max-4-width) {
+  section {
+    padding: 0 $gutter-xl 4rem;
+  }
+}

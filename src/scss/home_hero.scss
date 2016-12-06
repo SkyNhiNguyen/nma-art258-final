@@ -62,6 +62,10 @@
   }
 }
 
+.hero.shrink {
+  height: 300px;
+}
+
 @media screen and (min-width: $max-1-width) {
   .hero {
     &-header {

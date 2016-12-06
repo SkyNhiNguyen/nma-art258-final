@@ -1,15 +1,18 @@
 .hero {
   width: 100%;
-  position: absolute;
-  top: 5rem;
   display: flex;
   justify-content: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 
   &-img {
-    padding-top: 2rem;
+    padding-top: 5rem;
     width: 70%;
     margin: auto;
+
+    img {
+      width: 100%;
+      margin: auto;
+    }
   }
 
   &-header {
@@ -19,14 +22,17 @@
     color: $black;
   }
 
+  span {
+    border: 2px solid $black;
+    position: absolute;
+    z-index: -1;
+  }
+
   &-circle1 {
     width: 8rem;
     height: 8rem;
     border-radius: 8rem;
-    border: 2px solid $black;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
+    top: 18rem;
     right: 50%;
     animation: pulse 5s infinite ease-in-out alternate;
   }
@@ -35,12 +41,19 @@
     width: 8rem;
     height: 8rem;
     border-radius: 8rem;
-    border: 2px solid $black;
-    position: absolute;
-    z-index: -1;
-    top: 20%;
+    top: 10rem;
     right: 20%;
-    animation: pulse 10s infinite ease-in-out alternate;
+    animation: pulse 8s infinite ease-in-out alternate;
+  }
+
+  &-circle3 {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 10rem;
+    top: 30rem;
+    right: 10%;
+    opacity: 0;
+    animation: pulse 5s infinite ease-in-out alternate;
   }
 
   @keyframes pulse {
@@ -49,7 +62,7 @@
   }
 }
 
-@media screen and (min-width: $max-2-width) {
+@media screen and (min-width: $max-1-width) {
   .hero {
     &-header {
       font-size: 5rem;
@@ -60,30 +73,63 @@
     }
 
     &-circle1 {
-      right: 65%;
-      width: 10rem;
-      height: 10rem;
+      top: 20rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .hero {
+    &-header {
+      font-size: 5rem;
+    }
+
+    &-img {
+      max-width: 45%;
+    }
+
+    &-circle1 {
+      top: 25rem;
+      right: 50%;
+    }
+
+    &-circle2 {
+      top: 10rem;
+      right: 30%;
     }
   }
 }
 
 @media screen and (min-width: $max-3-width) {
   .hero {
+    flex-flow: row nowrap;
+    justify-content: center;
+
     &-img {
-      width: 55%;
+      max-width: 50%;
+      height: 50%;
+    }
+
+    &-header {
+      width: 100%;
+      align-self: center;
+      font-size: 6rem;
     }
 
     &-circle1 {
-      right: 50%;
-      width: 15rem;
-      height: 15rem;
+      top: 27rem;
+      right: 75%;
     }
 
     &-circle2 {
-      width: 10rem;
-      height: 10rem;
-      top: 20%;
-      right: 30%;
+      width: 5rem;
+      height: 5rem;
+      top: 10rem;
+      right: 50%;
+    }
+
+    &-circle3 {
+      opacity: 1;
     }
   }
 }
@@ -91,7 +137,11 @@
 @media screen and (min-width: $max-4-width) {
   .hero {
     &-img {
-      width: 50%;
+      max-width: 35%;
+    }
+
+    &-circle1 {
+      right: 80%;
     }
   }
 }

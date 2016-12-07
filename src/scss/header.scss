@@ -3,6 +3,7 @@ header {
   position: fixed;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-flow: row nowrap;
   padding: 0.5rem $gutter 0.25rem;
   background: rgba(255, 255, 255, 1);
@@ -107,7 +108,7 @@ header {
 
 @media screen and (min-width: $max-2-width) {
   header {
-    padding: 0 $gutter-big;
+    padding: 0 $gutter-med;
 
     .toggle-nav {
       display: none;
@@ -146,6 +147,8 @@ header {
 
 @media screen and (min-width: $max-3-width) {
   header {
+    padding: 0 $gutter-big;
+
     .mainnav {
       width: 40%;
     }
@@ -154,6 +157,8 @@ header {
 
 @media screen and (min-width: $max-4-width) {
   header {
+    padding: 0 $gutter-xl;
+
     .mainnav {
       width: 22rem;
     }

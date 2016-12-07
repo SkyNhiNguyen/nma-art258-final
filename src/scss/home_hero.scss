@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
+  position: relative;
 
   &-img {
     padding-top: 5rem;
@@ -32,7 +33,7 @@
     width: 8rem;
     height: 8rem;
     border-radius: 8rem;
-    top: 18rem;
+    top: 50%;
     right: 50%;
     animation: pulse 5s infinite ease-in-out alternate;
   }
@@ -41,14 +42,14 @@
     width: 8rem;
     height: 8rem;
     border-radius: 8rem;
-    top: 10rem;
+    top: 20%;
     right: 20%;
     animation: pulse 8s infinite ease-in-out alternate;
   }
 
   &-circle3 {
-    width: 9rem;
-    height: 9rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 10rem;
     opacity: 0;
     animation: pulse 5s infinite ease-in-out alternate;
@@ -60,10 +61,6 @@
   }
 }
 
-.hero.shrink {
-  height: 300px;
-}
-
 @media screen and (min-width: $max-1-width) {
   .hero {
     &-header {
@@ -72,10 +69,6 @@
 
     &-img {
       width: 60%;
-    }
-
-    &-circle1 {
-      top: 20rem;
     }
   }
 }
@@ -91,12 +84,10 @@
     }
 
     &-circle1 {
-      top: 25rem;
-      right: 50%;
+      right: 55%;
     }
 
     &-circle2 {
-      top: 10rem;
       right: 30%;
     }
   }
@@ -119,8 +110,7 @@
     }
 
     &-circle1 {
-      top: 23rem;
-      right: 75%;
+      right: 80%;
     }
 
     &-circle2 {
@@ -132,8 +122,8 @@
 
     &-circle3 {
       opacity: 1;
-      top: 20rem;
-      right: 10%;
+      top: 60%;
+      right: 20%;
     }
   }
 }
@@ -147,9 +137,10 @@
     &-header {
       font-size: 6rem;
     }
-
-    &-circle1 {
-      right: 80%;
-    }
+    //
+    // &-circle1 {
+    //   right: 75%;
+    //   top: 10rem;
+    // }
   }
 }

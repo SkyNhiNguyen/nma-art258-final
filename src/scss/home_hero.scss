@@ -17,7 +17,7 @@
 
   &-header {
     font-family: $hand-font;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
     color: $black;
   }
@@ -50,8 +50,6 @@
     width: 9rem;
     height: 9rem;
     border-radius: 10rem;
-    top: 30rem;
-    right: 10%;
     opacity: 0;
     animation: pulse 5s infinite ease-in-out alternate;
   }
@@ -85,7 +83,7 @@
 @media screen and (min-width: $max-2-width) {
   .hero {
     &-header {
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     &-img {
@@ -117,23 +115,25 @@
     &-header {
       width: 100%;
       align-self: center;
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
     &-circle1 {
-      top: 27rem;
+      top: 23rem;
       right: 75%;
     }
 
     &-circle2 {
       width: 5rem;
       height: 5rem;
-      top: 10rem;
-      right: 50%;
+      top: 7rem;
+      right: 65%;
     }
 
     &-circle3 {
       opacity: 1;
+      top: 20rem;
+      right: 10%;
     }
   }
 }
@@ -142,6 +142,10 @@
   .hero {
     &-img {
       max-width: 35%;
+    }
+
+    &-header {
+      font-size: 6rem;
     }
 
     &-circle1 {

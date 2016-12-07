@@ -81,7 +81,7 @@ gulp.task('js', () => {
 
 // copy over all your images
 gulp.task('images', () => {
-    return gulp.src('src/images/**/*.{gif,jpg,png,mp4,}').
+    return gulp.src('src/images/**/*.{gif,jpg,png,}').
         pipe(gulp.dest('images/')).
         pipe(browserSync.reload({ stream: true }))
 })

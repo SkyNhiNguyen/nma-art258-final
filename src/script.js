@@ -57,14 +57,8 @@ $('.promo-video-play').on('ended',function(){
 });
 // -------------------------------------------------
 
-// window content reveal
-window.sr = ScrollReveal({ reset: true });
-sr.reveal('.window-content', { delay: 200, scale: 0.5 });
-sr.reveal('.title-content', { delay: 200, scale: 0.5 });
-
-
-// GALLERY REVEAL
-// interval passed to reveal
+// REVEAL STUFF------------
+// gallery 
 var GReveal = {
   delay    : 100,
   distance : '90px',
@@ -75,3 +69,6 @@ var GReveal = {
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.gallery-grid', GReveal);
 sr.reveal('.gallery-cell', { delay: 200, scale: 0.5 });
+// window content reveal
+sr.reveal('.window-content', { delay: 200, scale: 0.5 });
+sr.reveal('.title-content', { delay: 200, scale: 0.5 });

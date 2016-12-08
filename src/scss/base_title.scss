@@ -11,6 +11,7 @@
   background-attachment: fixed;
 
   &-content {
+    visibility: hidden;
     background: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     margin: 2rem 0;

@@ -41,6 +41,7 @@ footer h4 {
     height: 2rem;
     border-radius: 20px;
     border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
     border: 1px solid $white;
     background: $white;
     opacity: 0.6;
@@ -56,6 +57,7 @@ footer h4 {
     border: 1px solid $white;
     border-radius: 20px;
     border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
     padding: 0.25rem 1rem;
     text-align: center;
   }

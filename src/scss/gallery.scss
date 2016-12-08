@@ -1,0 +1,44 @@
+.gallery-grid {
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  .gallery-cell {
+    position: relative;
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.name {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  align-self: flex-end;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+}
+
+.gallery-cell:hover {
+  .name {
+    visibility: visible;
+  }
+}

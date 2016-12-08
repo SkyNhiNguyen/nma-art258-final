@@ -9,6 +9,7 @@
 $brown: #666161;
 $black: #383a3f;
 $white: #fff;
+$orange: #ff7761;
 
 // GRID:
 $gutter: 1.5rem;
@@ -43,6 +44,15 @@ video {
 }
 
 // HEADING
+body {
+  font-family: $main-font;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 // import base_children
 @import "base_playicon";
+@import "base_cta";

@@ -1,11 +1,11 @@
 footer {
-  border-top: 2px solid $black;
   padding-top: 2rem;
   padding-bottom: 0;
   display: flex;
   align-items: flex-start;
   flex-flow: column nowrap;
-  color: $black;
+  color: $white;
+  background: black;
 }
 
 footer h3 {
@@ -42,8 +42,8 @@ footer h4 {
     border-radius: 20px;
     border-bottom-right-radius: 0;
     border: 1px solid $white;
-    background: $black;
-    opacity: 0.5;
+    background: $white;
+    opacity: 0.6;
     margin: 0.5rem 0;
   }
 
@@ -52,8 +52,8 @@ footer h4 {
     font-family: $main-font;
     line-height: 1.5rem;
     font-size: 0.9rem;
-    color: $black;
-    border: 1px solid $black;
+    color: $white;
+    border: 1px solid $white;
     border-radius: 20px;
     border-top-right-radius: 0;
     padding: 0.25rem 1rem;
@@ -61,8 +61,8 @@ footer h4 {
   }
 
   &-subscrible:hover {
-    color: $white;
-    background: $black;
+    color: $black;
+    background: $orange;
     transition: background-color ease-in-out 0.75s;
   }
 }
@@ -72,7 +72,7 @@ footer h4 {
 
   h4 {
     padding: 0 0.75rem;
-    border-left: 1px solid $black;
+    border-left: 1px solid $white;
     border-left-style: dotted;
   }
 }
@@ -86,7 +86,7 @@ footer h4 {
 
 .social-icon a {
   font-size: 1.65rem;
-  color: $black;
+  color: $white;
   line-height: 2rem;
   padding: 0.5rem;
 }
@@ -98,7 +98,7 @@ footer h4 {
 
 .copyright {
   width: 100%;
-  background: $black;
+  background: black;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 0.5rem;
   letter-spacing: 2px;

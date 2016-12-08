@@ -1,6 +1,57 @@
-section.promo-video {
-  padding: 0 0 3rem;
+.promo-video {
+  visibility: hidden;
+  padding: 0;
+  margin-bottom: 3rem;
   width: 100%;
   height: auto;
-  display: block;
+  position: relative;
+
+  &-content {
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    color: $white;
+    font-family: $main-font;
+    text-transform: capitalize;
+    line-height: 2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (min-width: $max-1-width) {
+  .promo-video {
+    &-content {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  .promo-video {
+    &-content {
+      top: 25%;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-3-width) {
+  .promo-video {
+    &-content {
+      top: 30%;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-4-width) {
+  .promo-video {
+    &-content {
+      top: 30%;
+      font-size: 2.5rem;
+    }
+  }
 }

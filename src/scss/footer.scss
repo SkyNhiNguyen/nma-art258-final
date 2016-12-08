@@ -1,11 +1,11 @@
 footer {
-  padding-top: 1rem;
+  border-top: 2px solid $black;
+  padding-top: 2rem;
   padding-bottom: 0;
   display: flex;
   align-items: flex-start;
   flex-flow: column nowrap;
-  color: $white;
-  background: $black;
+  color: $black;
 }
 
 footer h3 {
@@ -41,8 +41,9 @@ footer h4 {
     height: 2rem;
     border-radius: 20px;
     border-bottom-right-radius: 0;
-    border: 1px solid white;
-    background: transparent;
+    border: 1px solid $white;
+    background: $black;
+    opacity: 0.5;
     margin: 0.5rem 0;
   }
 
@@ -51,8 +52,8 @@ footer h4 {
     font-family: $main-font;
     line-height: 1.5rem;
     font-size: 0.9rem;
-    color: $white;
-    border: 1px solid white;
+    color: $black;
+    border: 1px solid $black;
     border-radius: 20px;
     border-top-right-radius: 0;
     padding: 0.25rem 1rem;
@@ -60,20 +61,24 @@ footer h4 {
   }
 
   &-subscrible:hover {
-    color: $black;
-    background: $white;
+    color: $white;
+    background: $black;
     transition: background-color ease-in-out 0.75s;
   }
 }
 
 .location {
   text-align: left;
+
+  h4 {
+    padding: 0 0.75rem;
+    border-left: 1px solid $black;
+    border-left-style: dotted;
+  }
 }
 
 .social-icon {
   width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-top-style: dashed;
   text-align: right;
   padding: 0.5rem;
   margin-top: 1rem;
@@ -81,7 +86,7 @@ footer h4 {
 
 .social-icon a {
   font-size: 1.65rem;
-  color: $white;
+  color: $black;
   line-height: 2rem;
   padding: 0.5rem;
 }
@@ -105,5 +110,27 @@ footer h4 {
 @media screen and (min-width: $max-1-width) {
   .newsletter {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: $max-2-width) {
+  footer {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .newsletter {
+    order: 2;
+    width: 50%;
+  }
+
+  .location {
+    width: 50%;
+    order: 1;
+  }
+
+  .social-icon {
+    width: 100%;
+    order: 3;
   }
 }

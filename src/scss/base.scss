@@ -46,13 +46,22 @@ video {
 // HEADING
 body {
   font-family: $main-font;
+  color: $black;
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+
+@media screen and (min-width: $max-1-width) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 // import base_children
 @import "base_playicon";
 @import "base_cta";
+@import "base_title";

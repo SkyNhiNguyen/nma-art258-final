@@ -1,0 +1,74 @@
+#window {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.script {
+  margin: auto;
+  position: relative;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 90%;
+
+  h2 {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+  }
+}
+
+.window-farm {
+  background-image: url(images/made/farmer.jpg);
+}
+
+.window-content {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 2rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    width: 60%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-transform: capitalize;
+  }
+}
+
+@media screen and (min-width: $max-3-width) {
+  .script {
+    width: 80%;
+
+    h2 {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      margin: 0.75rem 0;
+    }
+  }
+
+  .window-content {
+    h3 {
+      width: 50%;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: $max-4-width) {
+  #window {
+    height: 600px;
+  }
+}

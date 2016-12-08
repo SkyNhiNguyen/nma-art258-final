@@ -58,9 +58,9 @@ $('.promo-video-play').on('ended',function(){
 // -------------------------------------------------
 
 // REVEAL STUFF------------
-// gallery 
+// gallery
 var GReveal = {
-  delay    : 100,
+  delay    : 50,
   distance : '90px',
   easing   : 'ease-in-out',
   scale    : 1.1
@@ -68,7 +68,21 @@ var GReveal = {
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.gallery-grid', GReveal);
-sr.reveal('.gallery-cell', { delay: 200, scale: 0.5 });
+sr.reveal('.gallery-cell', { delay: 100, scale: 0.5 });
 // window content reveal
 sr.reveal('.window-content', { delay: 200, scale: 0.5 });
 sr.reveal('.title-content', { delay: 200, scale: 0.5 });
+
+
+// Carousel
+// LINEUP CAROUSEL=====================
+$('.carousel-gallery').slick({
+  arrows: true,
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 300,
+  fade: true,
+  cssEase: 'linear'
+});

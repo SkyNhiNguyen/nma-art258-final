@@ -1,0 +1,46 @@
+.carousel-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+
+  &-set {
+    margin: 0.25rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Carousel nav
+.slick-prev,
+.slick-next {
+  top: calc(100% + 25px);
+  z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: $black;
+  font-size: 1.5rem;
+}
+
+.slick-next {
+  right: calc(50% - 100px);
+}
+
+.slick-prev {
+  left: calc(50% - 100px);
+}
+
+.slick-dots {
+  bottom: -35px;
+}
+
+// cta
+#window.window-cta-gallery {
+  background-image: url(images/poster/chili.png);
+  background-size: contain;
+  background-position: bottom;
+}

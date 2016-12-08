@@ -28,6 +28,22 @@
   background-image: url(images/made/farmer.jpg);
 }
 
+.window-factory {
+  background-image: url(images/made/factory.jpg);
+}
+
+.window-package {
+  background-image: url(images/made/package.jpg);
+}
+
+.window-table {
+  background-image: url(images/made/table.jpg);
+}
+
+.window-cta {
+  background-image: url(images/made/cta.jpg);
+}
+
 .window-content {
   position: absolute;
   left: 0;
@@ -62,7 +78,8 @@
   .window-content {
     h3 {
       width: 50%;
-      font-size: 2rem;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
     }
   }
 }

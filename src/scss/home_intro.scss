@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
 
   .intro-content {
     color: $black;
@@ -37,6 +36,9 @@
 
 @media screen and (min-width: $max-2-width) {
   .intro {
+    background-size: 100%;
+    background-position: bottom;
+
     .intro-content {
       width: 70%;
     }

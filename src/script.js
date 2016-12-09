@@ -60,8 +60,8 @@ $('.promo-video-play').on('ended',function(){
 // REVEAL STUFF------------
 // gallery
 var GReveal = {
-  delay    : 50,
-  distance : '90px',
+  delay    : 100,
+  distance : '70px',
   easing   : 'ease-in-out',
   scale    : 1.1
 };

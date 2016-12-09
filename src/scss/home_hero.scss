@@ -75,10 +75,6 @@
 
 @media screen and (min-width: $max-2-width) {
   .hero {
-    &-header {
-      font-size: 4rem;
-    }
-
     &-img {
       max-width: 45%;
     }
@@ -105,6 +101,7 @@
 
     &-header {
       width: 100%;
+      padding-top: 5rem;
       align-self: center;
       font-size: 5rem;
     }
